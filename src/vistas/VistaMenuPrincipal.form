@@ -25,10 +25,13 @@
                 <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="itemListines.addActionListener(controlador);"/>
               </AuxValues>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+            <MenuItem class="javax.swing.JMenuItem" name="itemTasaSalida">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Tasa de Salida"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="itemTasaSalida.addActionListener(controlador);"/>
+              </AuxValues>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="itemHabilitaciones">
               <Properties>
@@ -38,7 +41,7 @@
                 <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="itemHabilitaciones.addActionListener(controlador);"/>
               </AuxValues>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
+            <MenuItem class="javax.swing.JMenuItem" name="itemPistaToque">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Pista de Toque"/>
               </Properties>

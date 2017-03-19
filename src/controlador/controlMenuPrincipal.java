@@ -4,6 +4,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import vistas.VistaListines;
 import vistas.VistaMenuPrincipal;
+import vistas.vistaHabilitaciones;
+import vistas.vistaTasaSalida;
 
 public class controlMenuPrincipal implements ActionListener{
 
@@ -18,8 +20,17 @@ public class controlMenuPrincipal implements ActionListener{
         if(e.getSource()==vista.getItemListines()){
             VistaListines vistaL=new VistaListines();
             vista.getEscritorioMenuPrincipal().add(vistaL);
-            vistaL.setVisible(true);
-            
+            vistaL.setVisible(true);  
+        }
+        else if(e.getSource()==vista.getItemTasaSalida()){
+            vistaTasaSalida vistaTS=new vistaTasaSalida();
+            vista.getEscritorioMenuPrincipal().add(vistaTS);
+            vistaTS.setVisible(true);
+        }else if(e.getSource()==vista.getItemHabilitaciones()){
+            System.out.println("VISTA HABILITACIONES");
+            vistaHabilitaciones vistaH=new vistaHabilitaciones();
+            vista.getEscritorioMenuPrincipal().add(vistaH);
+            vistaH.setVisible(true);
         }else if(e.getSource()==vista.getItemSalirSistema()){
             System.exit(0);  
         }

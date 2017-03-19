@@ -18,6 +18,7 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
 
     controlMenuPrincipal controlador=new controlMenuPrincipal(this);
     
+    
     public JDesktopPane getEscritorioMenuPrincipal() {
         return escritorioMenuPrincipal;
     }
@@ -26,6 +27,32 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
         this.escritorioMenuPrincipal = escritorioMenuPrincipal;
     }
 
+    public JMenuItem getItemHabilitaciones() {
+        return itemHabilitaciones;
+    }
+
+    public void setItemHabilitaciones(JMenuItem itemHabilitaciones) {
+        this.itemHabilitaciones = itemHabilitaciones;
+    }
+
+    public JMenuItem getItemPistaToque() {
+        return itemPistaToque;
+    }
+
+    public void setItemPistaToque(JMenuItem itemPistaToque) {
+        this.itemPistaToque = itemPistaToque;
+    }
+
+    public JMenuItem getItemTasaSalida() {
+        return itemTasaSalida;
+    }
+
+    public void setItemTasaSalida(JMenuItem itemTasaSalida) {
+        this.itemTasaSalida = itemTasaSalida;
+    }
+
+    
+    
     public JMenuItem getItemListines() {
         return itemListines;
     }
@@ -55,9 +82,9 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         itemListines = new javax.swing.JMenuItem();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        itemTasaSalida = new javax.swing.JMenuItem();
         itemHabilitaciones = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
+        itemPistaToque = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem10 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
@@ -96,15 +123,16 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
         jMenu1.add(itemListines);
         itemListines.addActionListener(controlador);
 
-        jMenuItem1.setText("Tasa de Salida");
-        jMenu1.add(jMenuItem1);
+        itemTasaSalida.setText("Tasa de Salida");
+        jMenu1.add(itemTasaSalida);
+        itemTasaSalida.addActionListener(controlador);
 
         itemHabilitaciones.setText("Habilitaciones");
         jMenu1.add(itemHabilitaciones);
         itemHabilitaciones.addActionListener(controlador);
 
-        jMenuItem3.setText("Pista de Toque");
-        jMenu1.add(jMenuItem3);
+        itemPistaToque.setText("Pista de Toque");
+        jMenu1.add(itemPistaToque);
 
         jMenuBar1.add(jMenu1);
 
@@ -199,15 +227,15 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JDesktopPane escritorioMenuPrincipal;
     private javax.swing.JMenuItem itemHabilitaciones;
     private javax.swing.JMenuItem itemListines;
+    private javax.swing.JMenuItem itemPistaToque;
     private javax.swing.JMenuItem itemSalirSistema;
+    private javax.swing.JMenuItem itemTasaSalida;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem10;
-    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem6;
