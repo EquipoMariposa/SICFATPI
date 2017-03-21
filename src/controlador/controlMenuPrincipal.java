@@ -26,12 +26,13 @@ public class controlMenuPrincipal implements ActionListener{
             vistaTasaSalida vistaTS=new vistaTasaSalida();
             vista.getEscritorioMenuPrincipal().add(vistaTS);
             vistaTS.setVisible(true);
-        }else if(e.getSource()==vista.getItemHabilitaciones()){
-            System.out.println("VISTA HABILITACIONES");
+        }
+        else if(e.getSource()==vista.getItemHabilitaciones()){
             vistaHabilitaciones vistaH=new vistaHabilitaciones();
             vista.getEscritorioMenuPrincipal().add(vistaH);
             vistaH.setVisible(true);
-        }else if(e.getSource()==vista.getItemSalirSistema()){
+        }
+        else if(e.getSource()==vista.getItemSalirSistema()){
             System.exit(0);  
         }
     }
