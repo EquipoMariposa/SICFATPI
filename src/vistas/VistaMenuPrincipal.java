@@ -17,7 +17,78 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
     }
 
     ControlMenuPrincipal controlador=new ControlMenuPrincipal(this);
-    
+
+    public JMenuItem getItemChofer() {
+        return itemChofer;
+    }
+
+    public void setItemChofer(JMenuItem itemChofer) {
+        this.itemChofer = itemChofer;
+    }
+
+    public JMenuItem getItemLineaTransporte() {
+        return itemLineaTransporte;
+    }
+
+    public void setItemLineaTransporte(JMenuItem itemLineaTransporte) {
+        this.itemLineaTransporte = itemLineaTransporte;
+    }
+
+    public JMenuItem getItemLocal() {
+        return itemLocal;
+    }
+
+    public void setItemLocal(JMenuItem itemLocal) {
+        this.itemLocal = itemLocal;
+    }
+
+    public JMenuItem getItemMarca() {
+        return itemMarca;
+    }
+
+    public void setItemMarca(JMenuItem itemMarca) {
+        this.itemMarca = itemMarca;
+    }
+
+    public JMenuItem getItemModelo() {
+        return itemModelo;
+    }
+
+    public void setItemModelo(JMenuItem itemModelo) {
+        this.itemModelo = itemModelo;
+    }
+
+    public JMenuItem getItemMonto() {
+        return itemMonto;
+    }
+
+    public void setItemMonto(JMenuItem itemMonto) {
+        this.itemMonto = itemMonto;
+    }
+
+    public JMenuItem getItemUnidadTransporte() {
+        return itemUnidadTransporte;
+    }
+
+    public void setItemUnidadTransporte(JMenuItem itemUnidadTransporte) {
+        this.itemUnidadTransporte = itemUnidadTransporte;
+    }
+
+    public JMenuItem getItemUsuario() {
+        return itemUsuario;
+    }
+
+    public void setItemUsuario(JMenuItem itemUsuario) {
+        this.itemUsuario = itemUsuario;
+    }
+
+    public JMenuItem getItemVendedorAmbulante() {
+        return itemVendedorAmbulante;
+    }
+
+    public void setItemVendedorAmbulante(JMenuItem itemVendedorAmbulante) {
+        this.itemVendedorAmbulante = itemVendedorAmbulante;
+    }
     
     public JDesktopPane getEscritorioMenuPrincipal() {
         return escritorioMenuPrincipal;
@@ -27,12 +98,12 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
         this.escritorioMenuPrincipal = escritorioMenuPrincipal;
     }
 
-    public JMenuItem getItemHabilitaciones() {
-        return itemHabilitaciones;
+    public JMenuItem getItemHabilitacion() {
+        return itemHabilitacion;
     }
 
-    public void setItemHabilitaciones(JMenuItem itemHabilitaciones) {
-        this.itemHabilitaciones = itemHabilitaciones;
+    public void setItemHabilitacion(JMenuItem itemHabilitacion) {
+        this.itemHabilitacion = itemHabilitacion;
     }
 
     public JMenuItem getItemPistaToque() {
@@ -53,12 +124,12 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
 
     
     
-    public JMenuItem getItemListines() {
-        return itemListines;
+    public JMenuItem getItemListin() {
+        return itemListin;
     }
 
-    public void setItemListines(JMenuItem itemListines) {
-        this.itemListines = itemListines;
+    public void setItemListin(JMenuItem itemListin) {
+        this.itemListin = itemListin;
     }
 
     public JMenuItem getItemSalirSistema() {
@@ -78,22 +149,25 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        escritorioMenuPrincipal = new MyJDesktopPane();
+        escritorioMenuPrincipal = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
-        itemListines = new javax.swing.JMenuItem();
+        itemListin = new javax.swing.JMenuItem();
         itemTasaSalida = new javax.swing.JMenuItem();
-        itemHabilitaciones = new javax.swing.JMenuItem();
+        itemHabilitacion = new javax.swing.JMenuItem();
         itemPistaToque = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem10 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenuItem6 = new javax.swing.JMenuItem();
-        jMenuItem7 = new javax.swing.JMenuItem();
-        jMenuItem8 = new javax.swing.JMenuItem();
-        jMenuItem9 = new javax.swing.JMenuItem();
+        itemLineaTransporte = new javax.swing.JMenuItem();
+        itemUnidadTransporte = new javax.swing.JMenuItem();
+        itemVendedorAmbulante = new javax.swing.JMenuItem();
+        itemLocal = new javax.swing.JMenuItem();
+        itemChofer = new javax.swing.JMenuItem();
+        itemUsuario = new javax.swing.JMenuItem();
+        itemMonto = new javax.swing.JMenuItem();
+        itemMarca = new javax.swing.JMenuItem();
+        itemModelo = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         itemSalirSistema = new javax.swing.JMenuItem();
 
@@ -114,22 +188,22 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
 
         jMenu1.setText("Archivo");
 
-        itemListines.setText("Listines");
-        itemListines.addActionListener(new java.awt.event.ActionListener() {
+        itemListin.setText("Listin");
+        itemListin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itemListinesActionPerformed(evt);
+                itemListinActionPerformed(evt);
             }
         });
-        jMenu1.add(itemListines);
-        itemListines.addActionListener(controlador);
+        jMenu1.add(itemListin);
+        itemListin.addActionListener(controlador);
 
         itemTasaSalida.setText("Tasa de Salida");
         jMenu1.add(itemTasaSalida);
         itemTasaSalida.addActionListener(controlador);
 
-        itemHabilitaciones.setText("Habilitaciones");
-        jMenu1.add(itemHabilitaciones);
-        itemHabilitaciones.addActionListener(controlador);
+        itemHabilitacion.setText("Habilitacion");
+        jMenu1.add(itemHabilitacion);
+        itemHabilitacion.addActionListener(controlador);
 
         itemPistaToque.setText("Pista de Toque");
         jMenu1.add(itemPistaToque);
@@ -145,23 +219,41 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
 
         jMenu4.setText("Configuracion");
 
-        jMenuItem4.setText("Lineas de Transporte");
-        jMenu4.add(jMenuItem4);
+        itemLineaTransporte.setText("Linea de Transporte");
+        jMenu4.add(itemLineaTransporte);
+        itemLineaTransporte.addActionListener(controlador);
 
-        jMenuItem5.setText("Montos");
-        jMenu4.add(jMenuItem5);
+        itemUnidadTransporte.setText("Unidad de Transporte");
+        jMenu4.add(itemUnidadTransporte);
+        itemUnidadTransporte.addActionListener(controlador);
 
-        jMenuItem6.setText("Locales");
-        jMenu4.add(jMenuItem6);
+        itemVendedorAmbulante.setText("Vendedor Ambulante");
+        jMenu4.add(itemVendedorAmbulante);
+        itemVendedorAmbulante.addActionListener(controlador);
 
-        jMenuItem7.setText("Conductores");
-        jMenu4.add(jMenuItem7);
+        itemLocal.setText("Local");
+        jMenu4.add(itemLocal);
+        itemLocal.addActionListener(controlador);
 
-        jMenuItem8.setText("Unidades de Transporte");
-        jMenu4.add(jMenuItem8);
+        itemChofer.setText("Chofer");
+        jMenu4.add(itemChofer);
+        itemChofer.addActionListener(controlador);
 
-        jMenuItem9.setText("Vendedores Ambulantes");
-        jMenu4.add(jMenuItem9);
+        itemUsuario.setText("Usuario");
+        jMenu4.add(itemUsuario);
+        itemUsuario.addActionListener(controlador);
+
+        itemMonto.setText("Monto");
+        jMenu4.add(itemMonto);
+        itemMonto.addActionListener(controlador);
+
+        itemMarca.setText("Marca");
+        jMenu4.add(itemMarca);
+        itemMarca.addActionListener(controlador);
+
+        itemModelo.setText("Modelo");
+        jMenu4.add(itemModelo);
+        itemModelo.addActionListener(controlador);
 
         jMenuBar1.add(jMenu4);
 
@@ -189,9 +281,9 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void itemListinesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemListinesActionPerformed
+    private void itemListinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemListinActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_itemListinesActionPerformed
+    }//GEN-LAST:event_itemListinActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -225,22 +317,25 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane escritorioMenuPrincipal;
-    private javax.swing.JMenuItem itemHabilitaciones;
-    private javax.swing.JMenuItem itemListines;
+    private javax.swing.JMenuItem itemChofer;
+    private javax.swing.JMenuItem itemHabilitacion;
+    private javax.swing.JMenuItem itemLineaTransporte;
+    private javax.swing.JMenuItem itemListin;
+    private javax.swing.JMenuItem itemLocal;
+    private javax.swing.JMenuItem itemMarca;
+    private javax.swing.JMenuItem itemModelo;
+    private javax.swing.JMenuItem itemMonto;
     private javax.swing.JMenuItem itemPistaToque;
     private javax.swing.JMenuItem itemSalirSistema;
     private javax.swing.JMenuItem itemTasaSalida;
+    private javax.swing.JMenuItem itemUnidadTransporte;
+    private javax.swing.JMenuItem itemUsuario;
+    private javax.swing.JMenuItem itemVendedorAmbulante;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem10;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
-    private javax.swing.JMenuItem jMenuItem7;
-    private javax.swing.JMenuItem jMenuItem8;
-    private javax.swing.JMenuItem jMenuItem9;
     // End of variables declaration//GEN-END:variables
 }

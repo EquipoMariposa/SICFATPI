@@ -14,15 +14,15 @@
             <Property name="text" type="java.lang.String" value="Archivo"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="itemListines">
+            <MenuItem class="javax.swing.JMenuItem" name="itemListin">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Listines"/>
+                <Property name="text" type="java.lang.String" value="Listin"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemListinesActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemListinActionPerformed"/>
               </Events>
               <AuxValues>
-                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="itemListines.addActionListener(controlador);"/>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="itemListin.addActionListener(controlador);"/>
               </AuxValues>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="itemTasaSalida">
@@ -33,12 +33,12 @@
                 <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="itemTasaSalida.addActionListener(controlador);"/>
               </AuxValues>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="itemHabilitaciones">
+            <MenuItem class="javax.swing.JMenuItem" name="itemHabilitacion">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Habilitaciones"/>
+                <Property name="text" type="java.lang.String" value="Habilitacion"/>
               </Properties>
               <AuxValues>
-                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="itemHabilitaciones.addActionListener(controlador);"/>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="itemHabilitacion.addActionListener(controlador);"/>
               </AuxValues>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="itemPistaToque">
@@ -65,35 +65,77 @@
             <Property name="text" type="java.lang.String" value="Configuracion"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
+            <MenuItem class="javax.swing.JMenuItem" name="itemLineaTransporte">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Lineas de Transporte"/>
+                <Property name="text" type="java.lang.String" value="Linea de Transporte"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="itemLineaTransporte.addActionListener(controlador);"/>
+              </AuxValues>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem5">
+            <MenuItem class="javax.swing.JMenuItem" name="itemUnidadTransporte">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Montos"/>
+                <Property name="text" type="java.lang.String" value="Unidad de Transporte"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="itemUnidadTransporte.addActionListener(controlador);"/>
+              </AuxValues>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem6">
+            <MenuItem class="javax.swing.JMenuItem" name="itemVendedorAmbulante">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Locales"/>
+                <Property name="text" type="java.lang.String" value="Vendedor Ambulante"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="itemVendedorAmbulante.addActionListener(controlador);"/>
+              </AuxValues>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem7">
+            <MenuItem class="javax.swing.JMenuItem" name="itemLocal">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Conductores"/>
+                <Property name="text" type="java.lang.String" value="Local"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="itemLocal.addActionListener(controlador);"/>
+              </AuxValues>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem8">
+            <MenuItem class="javax.swing.JMenuItem" name="itemChofer">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Unidades de Transporte"/>
+                <Property name="text" type="java.lang.String" value="Chofer"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="itemChofer.addActionListener(controlador);"/>
+              </AuxValues>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem9">
+            <MenuItem class="javax.swing.JMenuItem" name="itemUsuario">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Vendedores Ambulantes"/>
+                <Property name="text" type="java.lang.String" value="Usuario"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="itemUsuario.addActionListener(controlador);"/>
+              </AuxValues>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="itemMonto">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Monto"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="itemMonto.addActionListener(controlador);"/>
+              </AuxValues>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="itemMarca">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Marca"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="itemMarca.addActionListener(controlador);"/>
+              </AuxValues>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="itemModelo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Modelo"/>
+              </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_AddingCodePost" type="java.lang.String" value="itemModelo.addActionListener(controlador);"/>
+              </AuxValues>
             </MenuItem>
           </SubComponents>
         </Menu>
