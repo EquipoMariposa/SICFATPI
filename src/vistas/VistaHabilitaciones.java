@@ -9,12 +9,12 @@ package vistas;
  *
  * @author Elias
  */
-public class vistaHabilitaciones extends javax.swing.JInternalFrame {
+public class VistaHabilitaciones extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form vistaHabilitaciones
      */
-    public vistaHabilitaciones() {
+    public VistaHabilitaciones() {
         initComponents();
     }
 

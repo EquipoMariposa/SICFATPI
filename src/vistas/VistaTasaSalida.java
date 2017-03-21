@@ -9,12 +9,12 @@ package vistas;
  *
  * @author Elias
  */
-public class vistaTasaSalida extends javax.swing.JInternalFrame {
+public class VistaTasaSalida extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form vistaTasaSalida
      */
-    public vistaTasaSalida() {
+    public VistaTasaSalida() {
         initComponents();
     }
 

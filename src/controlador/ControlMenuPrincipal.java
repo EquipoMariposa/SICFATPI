@@ -4,14 +4,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import vistas.VistaListines;
 import vistas.VistaMenuPrincipal;
-import vistas.vistaHabilitaciones;
-import vistas.vistaTasaSalida;
+import vistas.VistaHabilitaciones;
+import vistas.VistaTasaSalida;
 
-public class controlMenuPrincipal implements ActionListener{
+public class ControlMenuPrincipal implements ActionListener{
 
     VistaMenuPrincipal vista;
 
-    public controlMenuPrincipal(VistaMenuPrincipal vista) {
+    public ControlMenuPrincipal(VistaMenuPrincipal vista) {
         this.vista = vista;
     }
     
@@ -23,12 +23,12 @@ public class controlMenuPrincipal implements ActionListener{
             vistaL.setVisible(true);  
         }
         else if(e.getSource()==vista.getItemTasaSalida()){
-            vistaTasaSalida vistaTS=new vistaTasaSalida();
+            VistaTasaSalida vistaTS=new VistaTasaSalida();
             vista.getEscritorioMenuPrincipal().add(vistaTS);
             vistaTS.setVisible(true);
         }
         else if(e.getSource()==vista.getItemHabilitaciones()){
-            vistaHabilitaciones vistaH=new vistaHabilitaciones();
+            VistaHabilitaciones vistaH=new VistaHabilitaciones();
             vista.getEscritorioMenuPrincipal().add(vistaH);
             vistaH.setVisible(true);
         }

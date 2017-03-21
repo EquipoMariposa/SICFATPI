@@ -1,6 +1,6 @@
 package vistas;
 
-import controlador.controlMenuPrincipal;
+import controlador.ControlMenuPrincipal;
 import javax.swing.JDesktopPane;
 import javax.swing.JMenuItem;
 
@@ -16,7 +16,7 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
         }
     }
 
-    controlMenuPrincipal controlador=new controlMenuPrincipal(this);
+    ControlMenuPrincipal controlador=new ControlMenuPrincipal(this);
     
     
     public JDesktopPane getEscritorioMenuPrincipal() {

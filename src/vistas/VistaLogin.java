@@ -14,7 +14,7 @@ import javax.swing.JTextField;
  *
  * @author Elias
  */
-public class vistaLogin extends javax.swing.JFrame {
+public class VistaLogin extends javax.swing.JFrame {
 
     public JPasswordField getPassContrasena() {
         return passContrasena;
@@ -45,7 +45,7 @@ public class vistaLogin extends javax.swing.JFrame {
     /**
      * Creates new form vistaLogin
      */
-    public vistaLogin() {
+    public VistaLogin() {
         initComponents();
         this.setTitle("Login - SICRATPI");
     }
@@ -214,19 +214,20 @@ public class vistaLogin extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(vistaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VistaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(vistaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VistaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(vistaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VistaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(vistaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(VistaLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
-            new vistaLogin().setVisible(true);
+            new VistaLogin().setVisible(true);
         });
     }
 
