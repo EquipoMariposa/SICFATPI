@@ -2,9 +2,9 @@ package controlador;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import vistas.VistaListines;
+import vistas.VistaListin;
 import vistas.VistaMenuPrincipal;
-import vistas.VistaHabilitaciones;
+import vistas.VistaHabilitacion;
 import vistas.VistaTasaSalida;
 
 public class ControlMenuPrincipal implements ActionListener{
@@ -18,7 +18,7 @@ public class ControlMenuPrincipal implements ActionListener{
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()==vista.getItemListines()){
-            VistaListines vistaL=new VistaListines();
+            VistaListin vistaL=new VistaListin();
             vista.getEscritorioMenuPrincipal().add(vistaL);
             vistaL.setVisible(true);  
         }
@@ -28,7 +28,7 @@ public class ControlMenuPrincipal implements ActionListener{
             vistaTS.setVisible(true);
         }
         else if(e.getSource()==vista.getItemHabilitaciones()){
-            VistaHabilitaciones vistaH=new VistaHabilitaciones();
+            VistaHabilitacion vistaH=new VistaHabilitacion();
             vista.getEscritorioMenuPrincipal().add(vistaH);
             vistaH.setVisible(true);
         }

@@ -40,12 +40,14 @@
                                   <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
                               </Group>
                           </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="lblCantPasajeros" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblCantPasajeros" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblCedulaChofer" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblPlacaVehiculo" alignment="0" min="-2" max="-2" attributes="0"/>
+                              </Group>
                               <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
                           </Group>
-                          <Component id="lblCedulaChofer" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="lblPlacaVehiculo" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                           <Group type="102" attributes="0">

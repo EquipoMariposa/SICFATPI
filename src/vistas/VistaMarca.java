@@ -9,12 +9,12 @@ package vistas;
  *
  * @author Elias
  */
-public class VistaLineaTransporte extends javax.swing.JInternalFrame {
+public class VistaMarca extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form VistaLineaTransporte
+     * Creates new form VistaMarca
      */
-    public VistaLineaTransporte() {
+    public VistaMarca() {
         initComponents();
     }
 
@@ -48,23 +48,23 @@ public class VistaLineaTransporte extends javax.swing.JInternalFrame {
         jPanel1.setBackground(new java.awt.Color(158, 158, 158));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
-        jLabel1.setText("Linea de Transporte");
+        jLabel1.setText("Marca");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(97, Short.MAX_VALUE)
+                .addContainerGap(199, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(87, 87, 87))
+                .addGap(193, 193, 193))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

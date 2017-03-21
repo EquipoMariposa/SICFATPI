@@ -126,9 +126,9 @@ public class VistaTasaSalida extends javax.swing.JInternalFrame {
                 .addComponent(lblTotal)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtTotal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
                 .addComponent(jButton1)
-                .addGap(0, 71, Short.MAX_VALUE))
+                .addGap(47, 47, 47))
         );
 
         pack();

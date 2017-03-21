@@ -9,12 +9,12 @@ package vistas;
  *
  * @author Elias
  */
-public class VistaLineaTransporte extends javax.swing.JInternalFrame {
+public class VistaUnidadTransporte extends javax.swing.JInternalFrame {
 
     /**
-     * Creates new form VistaLineaTransporte
+     * Creates new form VistaUnidadTransporte
      */
-    public VistaLineaTransporte() {
+    public VistaUnidadTransporte() {
         initComponents();
     }
 
@@ -48,23 +48,23 @@ public class VistaLineaTransporte extends javax.swing.JInternalFrame {
         jPanel1.setBackground(new java.awt.Color(158, 158, 158));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
-        jLabel1.setText("Linea de Transporte");
+        jLabel1.setText("Unidad de Transporte");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(97, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(76, 76, 76)
                 .addComponent(jLabel1)
-                .addGap(87, 87, 87))
+                .addContainerGap(83, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

@@ -5,16 +5,85 @@
  */
 package vistas;
 
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+
 /**
  *
  * @author Elias
  */
-public class VistaHabilitaciones extends javax.swing.JInternalFrame {
+public class VistaListin extends javax.swing.JInternalFrame {
 
-    /**
-     * Creates new form vistaHabilitaciones
-     */
-    public VistaHabilitaciones() {
+    public JButton getBtnAprobar() {
+        return btnAprobar;
+    }
+
+    public void setBtnAprobar(JButton btnAprobar) {
+        this.btnAprobar = btnAprobar;
+    }
+
+    public JButton getBtnLimpiar() {
+        return btnLimpiar;
+    }
+
+    public void setBtnLimpiar(JButton btnLimpiar) {
+        this.btnLimpiar = btnLimpiar;
+    }
+
+    public JComboBox<String> getComboCedChofer() {
+        return comboCedChofer;
+    }
+
+    public void setComboCedChofer(JComboBox<String> comboCedChofer) {
+        this.comboCedChofer = comboCedChofer;
+    }
+
+    public JComboBox<String> getComboPlacaVehiculo() {
+        return comboPlacaVehiculo;
+    }
+
+    public void setComboPlacaVehiculo(JComboBox<String> comboPlacaVehiculo) {
+        this.comboPlacaVehiculo = comboPlacaVehiculo;
+    }
+
+    public JRadioButton getOpcA() {
+        return opcA;
+    }
+
+    public void setOpcA(JRadioButton opcA) {
+        this.opcA = opcA;
+    }
+
+    public JRadioButton getOpcB() {
+        return opcB;
+    }
+
+    public void setOpcB(JRadioButton opcB) {
+        this.opcB = opcB;
+    }
+
+    public JTextField getTxtCantPasajeros() {
+        return txtCantPasajeros;
+    }
+
+    public void setTxtCantPasajeros(JTextField txtCantPasajeros) {
+        this.txtCantPasajeros = txtCantPasajeros;
+    }
+
+    public JTextField getTxtCodigo() {
+        return txtCodigo;
+    }
+
+    public void setTxtCodigo(JTextField txtCodigo) {
+        this.txtCodigo = txtCodigo;
+    }
+
+    
+    
+    
+    public VistaListin() {
         initComponents();
     }
 
@@ -27,28 +96,28 @@ public class VistaHabilitaciones extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        grupoTipo = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        lblTitulo = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         lblCodigo = new javax.swing.JLabel();
-        lvlCantPasajeros = new javax.swing.JLabel();
-        lblCedChofer = new javax.swing.JLabel();
+        lblTipo = new javax.swing.JLabel();
+        lblCantPasajeros = new javax.swing.JLabel();
+        lblCedulaChofer = new javax.swing.JLabel();
         lblPlacaVehiculo = new javax.swing.JLabel();
-        lblLineaHabilitada = new javax.swing.JLabel();
-        txtCantPasajeros = new javax.swing.JTextField();
-        txtCodigo = new javax.swing.JTextField();
-        comboCedChofer = new javax.swing.JComboBox<>();
-        comboLineaHabilitada = new javax.swing.JComboBox<>();
-        comboPlacaVehiculo = new javax.swing.JComboBox<>();
         btnAprobar = new javax.swing.JButton();
         btnLimpiar = new javax.swing.JButton();
-
-        setTitle("Habilitaciones");
+        txtCodigo = new javax.swing.JTextField();
+        opcA = new javax.swing.JRadioButton();
+        opcB = new javax.swing.JRadioButton();
+        txtCantPasajeros = new javax.swing.JTextField();
+        comboCedChofer = new javax.swing.JComboBox<>();
+        comboPlacaVehiculo = new javax.swing.JComboBox<>();
 
         jPanel1.setBackground(new java.awt.Color(158, 158, 158));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
-        jLabel1.setText("Habilitaciones");
+        lblTitulo.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
+        lblTitulo.setText("Listines");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -56,14 +125,14 @@ public class VistaHabilitaciones extends javax.swing.JInternalFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(127, 127, 127))
+                .addComponent(lblTitulo)
+                .addGap(181, 181, 181))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(lblTitulo)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -83,23 +152,27 @@ public class VistaHabilitaciones extends javax.swing.JInternalFrame {
 
         lblCodigo.setText("Codigo:");
 
-        lvlCantPasajeros.setText("Cant. Pasajeros:");
+        lblTipo.setText("Tipo:");
 
-        lblCedChofer.setText("Cedula Chofer:");
+        lblCantPasajeros.setText("Cant. Pasajeros:");
+
+        lblCedulaChofer.setText("Cedula Chofer:");
 
         lblPlacaVehiculo.setText("Placa Vehiculo:");
-
-        lblLineaHabilitada.setText("Linea Habilitada:");
-
-        comboCedChofer.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "25616336", "25179327", "25785295" }));
-
-        comboLineaHabilitada.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione", "Democracia 2000", "Merida Express", "Libertad leopoldo", " " }));
-
-        comboPlacaVehiculo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione" }));
 
         btnAprobar.setText("Aprobar");
 
         btnLimpiar.setText("Limpiar");
+
+        grupoTipo.add(opcA);
+        opcA.setText("A");
+
+        grupoTipo.add(opcB);
+        opcB.setText("B");
+
+        comboCedChofer.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione" }));
+
+        comboPlacaVehiculo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione" }));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -108,38 +181,38 @@ public class VistaHabilitaciones extends javax.swing.JInternalFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 484, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addGap(56, 56, 56)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(58, 58, 58)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lvlCantPasajeros)
-                            .addComponent(lblCodigo))
-                        .addGap(65, 65, 65)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtCantPasajeros, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                    .addComponent(lblCodigo)
+                                    .addGap(105, 105, 105))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(lblTipo)
+                                    .addGap(118, 118, 118)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblPlacaVehiculo)
-                                    .addComponent(lblCedChofer))
-                                .addGap(73, 73, 73)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(comboCedChofer, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(comboPlacaVehiculo, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                    .addComponent(lblCantPasajeros)
+                                    .addComponent(lblCedulaChofer)
+                                    .addComponent(lblPlacaVehiculo))
+                                .addGap(61, 61, 61)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblLineaHabilitada)
-                                .addGap(67, 67, 67)
-                                .addComponent(comboLineaHabilitada, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                        .addGap(175, 175, 175))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(136, 136, 136)
-                .addComponent(btnAprobar)
-                .addGap(57, 57, 57)
-                .addComponent(btnLimpiar)
-                .addGap(0, 0, Short.MAX_VALUE))
+                                .addComponent(opcA)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(opcB))
+                            .addComponent(txtCodigo)
+                            .addComponent(txtCantPasajeros)
+                            .addComponent(comboCedChofer, 0, 80, Short.MAX_VALUE)
+                            .addComponent(comboPlacaVehiculo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(139, 139, 139)
+                        .addComponent(btnAprobar)
+                        .addGap(57, 57, 57)
+                        .addComponent(btnLimpiar)))
+                .addContainerGap(152, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -147,31 +220,32 @@ public class VistaHabilitaciones extends javax.swing.JInternalFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(67, 67, 67)
+                .addGap(68, 68, 68)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCodigo)
                     .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(32, 32, 32)
+                .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lvlCantPasajeros)
+                    .addComponent(lblTipo)
+                    .addComponent(opcA)
+                    .addComponent(opcB))
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblCantPasajeros)
                     .addComponent(txtCantPasajeros, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(28, 28, 28)
+                .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblCedChofer)
+                    .addComponent(lblCedulaChofer)
                     .addComponent(comboCedChofer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblPlacaVehiculo)
                     .addComponent(comboPlacaVehiculo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblLineaHabilitada)
-                    .addComponent(comboLineaHabilitada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(47, 47, 47)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAprobar)
                     .addComponent(btnLimpiar))
-                .addGap(0, 64, Short.MAX_VALUE))
+                .addGap(52, 52, 52))
         );
 
         pack();
@@ -182,16 +256,18 @@ public class VistaHabilitaciones extends javax.swing.JInternalFrame {
     private javax.swing.JButton btnAprobar;
     private javax.swing.JButton btnLimpiar;
     private javax.swing.JComboBox<String> comboCedChofer;
-    private javax.swing.JComboBox<String> comboLineaHabilitada;
     private javax.swing.JComboBox<String> comboPlacaVehiculo;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.ButtonGroup grupoTipo;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JLabel lblCedChofer;
+    private javax.swing.JLabel lblCantPasajeros;
+    private javax.swing.JLabel lblCedulaChofer;
     private javax.swing.JLabel lblCodigo;
-    private javax.swing.JLabel lblLineaHabilitada;
     private javax.swing.JLabel lblPlacaVehiculo;
-    private javax.swing.JLabel lvlCantPasajeros;
+    private javax.swing.JLabel lblTipo;
+    private javax.swing.JLabel lblTitulo;
+    private javax.swing.JRadioButton opcA;
+    private javax.swing.JRadioButton opcB;
     private javax.swing.JTextField txtCantPasajeros;
     private javax.swing.JTextField txtCodigo;
     // End of variables declaration//GEN-END:variables
