@@ -149,7 +149,7 @@ public class VistaMenuPrincipal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        escritorioMenuPrincipal = new javax.swing.JDesktopPane();
+        escritorioMenuPrincipal = new MyJDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         itemListin = new javax.swing.JMenuItem();
