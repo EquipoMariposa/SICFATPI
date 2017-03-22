@@ -5,12 +5,82 @@
  */
 package vistas;
 
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JTextField;
+
 /**
  *
  * @author Elias
  */
 public class VistaUnidadTransporte extends javax.swing.JInternalFrame {
 
+    public JButton getBtnAceptar() {
+        return btnAceptar;
+    }
+
+    public void setBtnAceptar(JButton btnAceptar) {
+        this.btnAceptar = btnAceptar;
+    }
+
+    public JButton getBtnLimpiar() {
+        return btnLimpiar;
+    }
+
+    public void setBtnLimpiar(JButton btnLimpiar) {
+        this.btnLimpiar = btnLimpiar;
+    }
+
+    public JComboBox<String> getComboChofer() {
+        return comboChofer;
+    }
+
+    public void setComboChofer(JComboBox<String> comboChofer) {
+        this.comboChofer = comboChofer;
+    }
+
+    public JComboBox<String> getComboLineaTransporte() {
+        return comboLineaTransporte;
+    }
+
+    public void setComboLineaTransporte(JComboBox<String> comboLineaTransporte) {
+        this.comboLineaTransporte = comboLineaTransporte;
+    }
+
+    public JComboBox<String> getComboMarca() {
+        return comboMarca;
+    }
+
+    public void setComboMarca(JComboBox<String> comboMarca) {
+        this.comboMarca = comboMarca;
+    }
+
+    public JComboBox<String> getComboModelo() {
+        return comboModelo;
+    }
+
+    public void setComboModelo(JComboBox<String> comboModelo) {
+        this.comboModelo = comboModelo;
+    }
+
+    public JTextField getTxtNumPuestos() {
+        return txtNumPuestos;
+    }
+
+    public void setTxtNumPuestos(JTextField txtNumPuestos) {
+        this.txtNumPuestos = txtNumPuestos;
+    }
+
+    public JTextField getTxtPlaca() {
+        return txtPlaca;
+    }
+
+    public void setTxtPlaca(JTextField txtPlaca) {
+        this.txtPlaca = txtPlaca;
+    }
+
+    
+    
     /**
      * Creates new form VistaUnidadTransporte
      */
@@ -30,20 +100,20 @@ public class VistaUnidadTransporte extends javax.swing.JInternalFrame {
         jPanel3 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jComboBox4 = new javax.swing.JComboBox<>();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        lblPlaca = new javax.swing.JLabel();
+        lblNumPuestos = new javax.swing.JLabel();
+        lblModelo = new javax.swing.JLabel();
+        lblMarca = new javax.swing.JLabel();
+        lblChofer = new javax.swing.JLabel();
+        lblLineaTransporte = new javax.swing.JLabel();
+        txtPlaca = new javax.swing.JTextField();
+        txtNumPuestos = new javax.swing.JTextField();
+        comboChofer = new javax.swing.JComboBox<>();
+        comboLineaTransporte = new javax.swing.JComboBox<>();
+        comboMarca = new javax.swing.JComboBox<>();
+        comboModelo = new javax.swing.JComboBox<>();
+        btnAceptar = new javax.swing.JButton();
+        btnLimpiar = new javax.swing.JButton();
 
         jPanel3.setBackground(new java.awt.Color(0, 150, 136));
         jPanel3.setPreferredSize(new java.awt.Dimension(0, 6));
@@ -81,29 +151,29 @@ public class VistaUnidadTransporte extends javax.swing.JInternalFrame {
                 .addContainerGap())
         );
 
-        jLabel2.setText("Placa:");
+        lblPlaca.setText("Placa:");
 
-        jLabel3.setText("Num. Puestos:");
+        lblNumPuestos.setText("Num. Puestos:");
 
-        jLabel4.setText("Modelo:");
+        lblModelo.setText("Modelo:");
 
-        jLabel5.setText("Marca:");
+        lblMarca.setText("Marca:");
 
-        jLabel6.setText("Chofer:");
+        lblChofer.setText("Chofer:");
 
-        jLabel7.setText("Linea de Transporte:");
+        lblLineaTransporte.setText("Linea de Transporte:");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione" }));
+        comboChofer.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione" }));
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione" }));
+        comboLineaTransporte.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione" }));
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione" }));
+        comboMarca.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione" }));
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione" }));
+        comboModelo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione" }));
 
-        jButton1.setText("Aceptar");
+        btnAceptar.setText("Aceptar");
 
-        jButton2.setText("Limpiar");
+        btnLimpiar.setText("Limpiar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -114,26 +184,26 @@ public class VistaUnidadTransporte extends javax.swing.JInternalFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(73, 73, 73)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel7)
-                    .addComponent(jLabel6)
-                    .addComponent(jLabel4)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel5))
+                    .addComponent(lblPlaca)
+                    .addComponent(lblLineaTransporte)
+                    .addComponent(lblChofer)
+                    .addComponent(lblModelo)
+                    .addComponent(lblNumPuestos)
+                    .addComponent(lblMarca))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField1)
-                    .addComponent(jTextField2)
-                    .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jComboBox2, 0, 80, Short.MAX_VALUE)
-                    .addComponent(jComboBox3, 0, 80, Short.MAX_VALUE)
-                    .addComponent(jComboBox4, 0, 80, Short.MAX_VALUE))
+                    .addComponent(txtPlaca)
+                    .addComponent(txtNumPuestos)
+                    .addComponent(comboChofer, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(comboLineaTransporte, 0, 80, Short.MAX_VALUE)
+                    .addComponent(comboMarca, 0, 80, Short.MAX_VALUE)
+                    .addComponent(comboModelo, 0, 80, Short.MAX_VALUE))
                 .addGap(132, 132, 132))
             .addGroup(layout.createSequentialGroup()
                 .addGap(145, 145, 145)
-                .addComponent(jButton2)
+                .addComponent(btnLimpiar)
                 .addGap(53, 53, 53)
-                .addComponent(jButton1)
+                .addComponent(btnAceptar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -144,32 +214,32 @@ public class VistaUnidadTransporte extends javax.swing.JInternalFrame {
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(59, 59, 59)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblPlaca)
+                    .addComponent(txtPlaca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblNumPuestos)
+                    .addComponent(txtNumPuestos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(31, 31, 31)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblChofer)
+                    .addComponent(comboChofer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel7)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblLineaTransporte)
+                    .addComponent(comboLineaTransporte, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblModelo)
+                    .addComponent(comboModelo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(23, 23, 23)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
+                    .addComponent(comboMarca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblMarca))
                 .addGap(37, 37, 37)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                    .addComponent(btnAceptar)
+                    .addComponent(btnLimpiar))
                 .addGap(28, 28, 28))
         );
 
@@ -178,22 +248,22 @@ public class VistaUnidadTransporte extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
-    private javax.swing.JComboBox<String> jComboBox4;
+    private javax.swing.JButton btnAceptar;
+    private javax.swing.JButton btnLimpiar;
+    private javax.swing.JComboBox<String> comboChofer;
+    private javax.swing.JComboBox<String> comboLineaTransporte;
+    private javax.swing.JComboBox<String> comboMarca;
+    private javax.swing.JComboBox<String> comboModelo;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JLabel lblChofer;
+    private javax.swing.JLabel lblLineaTransporte;
+    private javax.swing.JLabel lblMarca;
+    private javax.swing.JLabel lblModelo;
+    private javax.swing.JLabel lblNumPuestos;
+    private javax.swing.JLabel lblPlaca;
+    private javax.swing.JTextField txtNumPuestos;
+    private javax.swing.JTextField txtPlaca;
     // End of variables declaration//GEN-END:variables
 }

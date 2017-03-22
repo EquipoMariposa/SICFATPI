@@ -28,19 +28,19 @@
           <Component id="jPanel3" alignment="0" pref="484" max="32767" attributes="0"/>
           <Group type="102" attributes="0">
               <EmptySpace min="-2" pref="156" max="-2" attributes="0"/>
-              <Component id="lblUTSProcesar" min="-2" max="-2" attributes="0"/>
+              <Component id="lblUltimaTasaSalida" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="1" attributes="0">
                   <Component id="lblTotal" alignment="1" min="-2" pref="75" max="-2" attributes="0"/>
-                  <Component id="lblUCodigo" alignment="1" min="-2" pref="75" max="-2" attributes="0"/>
+                  <Component id="lblUltimoCodigo" alignment="1" min="-2" pref="75" max="-2" attributes="0"/>
                   <Component id="txtUltimoCodigo" alignment="1" min="-2" pref="75" max="-2" attributes="0"/>
                   <Group type="103" alignment="1" groupAlignment="0" max="-2" attributes="0">
                       <Component id="txtUltimaTasaSalida" max="32767" attributes="0"/>
                       <Component id="txtTotal" alignment="1" max="32767" attributes="0"/>
-                      <Component id="jButton1" alignment="1" max="32767" attributes="0"/>
+                      <Component id="btnProcesar" alignment="1" max="32767" attributes="0"/>
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="212" max="-2" attributes="0"/>
@@ -54,11 +54,11 @@
               <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
               <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
-              <Component id="lblUCodigo" min="-2" max="-2" attributes="0"/>
+              <Component id="lblUltimoCodigo" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="txtUltimoCodigo" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
-              <Component id="lblUTSProcesar" min="-2" max="-2" attributes="0"/>
+              <Component id="lblUltimaTasaSalida" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="txtUltimaTasaSalida" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
@@ -66,7 +66,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="txtTotal" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="61" max="32767" attributes="0"/>
-              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <Component id="btnProcesar" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -134,7 +134,7 @@
         </DimensionLayout>
       </Layout>
     </Container>
-    <Component class="javax.swing.JLabel" name="lblUCodigo">
+    <Component class="javax.swing.JLabel" name="lblUltimoCodigo">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="0"/>
         <Property name="text" type="java.lang.String" value="Ultimo codigo:"/>
@@ -142,7 +142,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="txtUltimoCodigo">
     </Component>
-    <Component class="javax.swing.JLabel" name="lblUTSProcesar">
+    <Component class="javax.swing.JLabel" name="lblUltimaTasaSalida">
       <Properties>
         <Property name="text" type="java.lang.String" value="Ultima Tasa de Salida a Procesar:"/>
       </Properties>
@@ -157,7 +157,7 @@
     </Component>
     <Component class="javax.swing.JTextField" name="txtTotal">
     </Component>
-    <Component class="javax.swing.JButton" name="jButton1">
+    <Component class="javax.swing.JButton" name="btnProcesar">
       <Properties>
         <Property name="text" type="java.lang.String" value="Procesar"/>
       </Properties>

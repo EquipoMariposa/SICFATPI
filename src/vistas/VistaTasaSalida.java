@@ -5,12 +5,49 @@
  */
 package vistas;
 
+import javax.swing.JButton;
+import javax.swing.JTextField;
+
 /**
  *
  * @author Elias
  */
 public class VistaTasaSalida extends javax.swing.JInternalFrame {
 
+    public JButton getBtnProcesar() {
+        return btnProcesar;
+    }
+
+    public void setBtnProcesar(JButton btnProcesar) {
+        this.btnProcesar = btnProcesar;
+    }
+
+    public JTextField getTxtTotal() {
+        return txtTotal;
+    }
+
+    public void setTxtTotal(JTextField txtTotal) {
+        this.txtTotal = txtTotal;
+    }
+
+    public JTextField getTxtUltimaTasaSalida() {
+        return txtUltimaTasaSalida;
+    }
+
+    public void setTxtUltimaTasaSalida(JTextField txtUltimaTasaSalida) {
+        this.txtUltimaTasaSalida = txtUltimaTasaSalida;
+    }
+
+    public JTextField getTxtUltimoCodigo() {
+        return txtUltimoCodigo;
+    }
+
+    public void setTxtUltimoCodigo(JTextField txtUltimoCodigo) {
+        this.txtUltimoCodigo = txtUltimoCodigo;
+    }
+
+    
+    
     /**
      * Creates new form vistaTasaSalida
      */
@@ -30,13 +67,13 @@ public class VistaTasaSalida extends javax.swing.JInternalFrame {
         jPanel1 = new javax.swing.JPanel();
         lblTitulo = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        lblUCodigo = new javax.swing.JLabel();
+        lblUltimoCodigo = new javax.swing.JLabel();
         txtUltimoCodigo = new javax.swing.JTextField();
-        lblUTSProcesar = new javax.swing.JLabel();
+        lblUltimaTasaSalida = new javax.swing.JLabel();
         txtUltimaTasaSalida = new javax.swing.JTextField();
         lblTotal = new javax.swing.JLabel();
         txtTotal = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
+        btnProcesar = new javax.swing.JButton();
 
         setPreferredSize(new java.awt.Dimension(500, 500));
 
@@ -76,15 +113,15 @@ public class VistaTasaSalida extends javax.swing.JInternalFrame {
             .addGap(0, 6, Short.MAX_VALUE)
         );
 
-        lblUCodigo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblUCodigo.setText("Ultimo codigo:");
+        lblUltimoCodigo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblUltimoCodigo.setText("Ultimo codigo:");
 
-        lblUTSProcesar.setText("Ultima Tasa de Salida a Procesar:");
+        lblUltimaTasaSalida.setText("Ultima Tasa de Salida a Procesar:");
 
         lblTotal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTotal.setText("Total:");
 
-        jButton1.setText("Procesar");
+        btnProcesar.setText("Procesar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -94,18 +131,18 @@ public class VistaTasaSalida extends javax.swing.JInternalFrame {
             .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 484, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addGap(156, 156, 156)
-                .addComponent(lblUTSProcesar)
+                .addComponent(lblUltimaTasaSalida)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblUCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblUltimoCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtUltimoCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(txtUltimaTasaSalida)
                         .addComponent(txtTotal, javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(btnProcesar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(212, 212, 212))
         );
         layout.setVerticalGroup(
@@ -115,11 +152,11 @@ public class VistaTasaSalida extends javax.swing.JInternalFrame {
                 .addGap(0, 0, 0)
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(49, 49, 49)
-                .addComponent(lblUCodigo)
+                .addComponent(lblUltimoCodigo)
                 .addGap(18, 18, 18)
                 .addComponent(txtUltimoCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(51, 51, 51)
-                .addComponent(lblUTSProcesar)
+                .addComponent(lblUltimaTasaSalida)
                 .addGap(18, 18, 18)
                 .addComponent(txtUltimaTasaSalida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(31, 31, 31)
@@ -127,7 +164,7 @@ public class VistaTasaSalida extends javax.swing.JInternalFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtTotal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
-                .addComponent(jButton1)
+                .addComponent(btnProcesar)
                 .addGap(47, 47, 47))
         );
 
@@ -136,13 +173,13 @@ public class VistaTasaSalida extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnProcesar;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JLabel lblTitulo;
     private javax.swing.JLabel lblTotal;
-    private javax.swing.JLabel lblUCodigo;
-    private javax.swing.JLabel lblUTSProcesar;
+    private javax.swing.JLabel lblUltimaTasaSalida;
+    private javax.swing.JLabel lblUltimoCodigo;
     private javax.swing.JTextField txtTotal;
     private javax.swing.JTextField txtUltimaTasaSalida;
     private javax.swing.JTextField txtUltimoCodigo;
